@@ -49,11 +49,11 @@
             label = "EXCEL_FIT_COLS";
         };
 
-        m0: pass {
+        m0: m0 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp T &kp X &kp LS(T) &kp LS(V) &kp Y &kp LS(M) &kp W &kp N3 &kp N4 &kp N7 &kp LS(D) &kp N6 &kp LS(Y) &kp N9 &kp W &kp N8 &kp ENTER>;
-            label = "PASS";
+            label = "M0";
         };
     };
 
@@ -84,9 +84,9 @@
 
         sym {
             bindings = <
-&trans  &trans    &kp LT        &kp EQUAL     &kp GT        &kp GRAVE                    &kp LC(KP_PLUS)    &kp LBKT   &kp UNDER    &kp RBKT  &trans     &trans
-&trans  &kp HASH  &kp LPAR      &kp MINUS     &kp LS(F6)    &trans                       &kp LC(KP_MINUS)   &kp LBRC   &kp PERCENT  &kp RBRC  &kp K_APP  &kp BACKSLASH
-&trans  &kp N1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans                       &kp LC(LA(RIGHT))  &kp ENTER  &kp ASTRK    &trans    &trans     &trans
+&trans  &trans    &kp LT        &kp EQUAL     &kp GT        &kp GRAVE                    &kp LC(KP_PLUS)    &kp LBKT   &kp UNDER    &kp RBKT       &kp QUESTION  &trans
+&trans  &kp HASH  &kp LPAR      &kp MINUS     &kp LS(F6)    &trans                       &kp LC(KP_MINUS)   &kp LBRC   &kp PERCENT  &kp RBRC       &kp K_APP     &kp BACKSLASH
+&trans  &kp N1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans                       &kp LC(LA(RIGHT))  &kp ENTER  &kp ASTRK    &kp AMPERSAND  &trans        &trans
                   &trans        &trans        &trans        &mo 3      &trans    &trans  &trans             &trans     &trans       &trans
             >;
 
