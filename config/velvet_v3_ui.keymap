@@ -73,7 +73,7 @@
 
         nav {
             bindings = <
-&kp LC(LA(LS(TAB)))  &kp LA(LC(TAB))  &kp HOME       &kp UP        &kp END        &kp INS                                 &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp KP_NUMLOCK
+&kp LC(LA(LS(TAB)))  &kp LA(LC(TAB))  &kp HOME       &kp UP        &kp END        &kp INS                                 &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp BACKSPACE
 &trans               &kp LG(SPACE)    &kp LEFT       &kp DOWN      &kp RIGHT      &kp LC(RET)                             &trans          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_EQUAL
 &trans               &excel_fit_cols  &kp LC(LEFT)   &kp CAPSLOCK  &kp LC(RIGHT)  &kp DEL                                 &trans          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_COMMA  &kp KP_DOT
                                       &kp LG(LS(S))  &kp F2        &trans         &trans       &trans    &kp KP_NUMBER_0  &mo 3           &trans           &kp KP_DIVIDE    &kp KP_MULTIPLY
@@ -85,7 +85,7 @@
         sym {
             bindings = <
 &trans  &trans    &kp LT        &kp EQUAL     &kp GT        &kp GRAVE                    &kp LC(KP_PLUS)    &kp LBKT   &kp UNDER    &kp RBKT  &trans     &trans
-&trans  &kp HASH  &kp LPAR      &kp MINUS     &kp LS(F6)    &trans                       &kp LC(KP_MINUS)   &kp LBRC   &kp PERCENT  &kp RBRC  &kp K_APP  &trans
+&trans  &kp HASH  &kp LPAR      &kp MINUS     &kp LS(F6)    &trans                       &kp LC(KP_MINUS)   &kp LBRC   &kp PERCENT  &kp RBRC  &kp K_APP  &kp BACKSLASH
 &trans  &kp N1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans                       &kp LC(LA(RIGHT))  &kp ENTER  &kp ASTRK    &trans    &trans     &trans
                   &trans        &trans        &trans        &mo 3      &trans    &trans  &trans             &trans     &trans       &trans
             >;
@@ -98,7 +98,7 @@
 &bootloader  &kp F1  &kp F2   &kp F3   &kp F4   &trans                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &m0
 &none        &kp F5  &kp F6   &kp F7   &kp F8   &trans                  &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &bt BT_CLR    &studio_unlock
 &none        &kp F9  &kp F10  &kp F11  &kp F12  &trans                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &none         &none
-                     &none    &none    &none    &none   &none    &none  &none         &none         &none             &none
+                     &none    &none    &none    &none   &none    &none  &none         &none         &kp C_MUTE        &kp K_MUTE2
             >;
 
             display-name = "3";
