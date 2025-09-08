@@ -65,7 +65,7 @@
 &kp ESC        &kp Q  &kp W            &kp E            &kp R           &kp T                               &kp Y  &kp U         &kp I            &kp O            &kp P      &kp BSPC
 &kp TAB        &kp A  &hrm LEFT_GUI S  &hrm LEFT_ALT D  &hrm LCTRL F    &kp G                               &kp H  &hrm LCTRL J  &hrm LEFT_ALT K  &hrm LEFT_GUI L  &kp SEMI   &kp APOS
 &kp LC(PG_UP)  &kp Z  &kp X            &kp C            &kp V           &kp B                               &kp N  &kp M         &kp COMMA        &kp DOT          &kp SLASH  &kp LC(PG_DN)
-                      &trans           &kp NUMBER_2     &kp LEFT_SHIFT  &mo 1  &kp SPACE    &kp LEFT_SHIFT  &mo 2  &mo 4         &kp LBKT         &kp RBKT
+                      &mo 6            &kp NUMBER_2     &kp LEFT_SHIFT  &mo 1  &kp SPACE    &kp LEFT_SHIFT  &mo 2  &mo 4         &kp LBKT         &kp RBKT
             >;
 
             display-name = "0";
@@ -73,10 +73,10 @@
 
         nav {
             bindings = <
-&kp LC(LA(LS(TAB)))  &kp LA(LC(TAB))  &kp HOME       &kp UP        &kp END        &kp INS                                 &kp KP_NUMLOCK  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp BACKSPACE
-&trans               &kp LG(SPACE)    &kp LEFT       &kp DOWN      &kp RIGHT      &kp LC(RET)                             &trans          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_EQUAL
-&trans               &excel_fit_cols  &kp LC(LEFT)   &kp CAPSLOCK  &kp LC(RIGHT)  &kp DEL                                 &trans          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_COMMA  &kp KP_DOT
-                                      &kp LG(LS(S))  &kp F2        &trans         &trans       &trans    &kp KP_NUMBER_0  &mo 3           &trans           &kp KP_DIVIDE    &kp KP_MULTIPLY
+&kp LC(LA(LS(TAB)))  &kp LA(LC(TAB))  &kp HOME       &kp UP        &kp END        &kp INS                        &kp KP_NUMLOCK     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_MINUS  &kp BACKSPACE
+&trans               &kp LG(SPACE)    &kp LEFT       &kp DOWN      &kp RIGHT      &kp LC(RET)                    &trans             &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS   &kp KP_EQUAL
+&trans               &excel_fit_cols  &kp LC(LEFT)   &kp CAPSLOCK  &kp LC(RIGHT)  &kp DEL                        &trans             &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_COMMA  &kp KP_DOT
+                                      &kp LG(LS(S))  &kp F2        &trans         &trans       &trans    &trans  &lt 3 KP_NUMBER_0  &trans           &kp KP_DIVIDE    &kp KP_MULTIPLY
             >;
 
             display-name = "1";
@@ -84,10 +84,10 @@
 
         sym {
             bindings = <
-&trans  &trans    &kp LT        &kp EQUAL     &kp GT        &kp GRAVE                    &kp LC(KP_PLUS)    &kp LBKT   &kp UNDER    &kp RBKT       &kp QUESTION  &trans
-&trans  &kp HASH  &kp LPAR      &kp MINUS     &kp LS(F6)    &trans                       &kp LC(KP_MINUS)   &kp LBRC   &kp PERCENT  &kp RBRC       &kp K_APP     &kp BACKSLASH
-&trans  &kp N1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &trans                       &kp LC(LA(RIGHT))  &kp ENTER  &kp ASTRK    &kp AMPERSAND  &trans        &trans
-                  &trans        &trans        &trans        &mo 3      &trans    &trans  &trans             &trans     &trans       &trans
+&trans  &trans    &kp LT        &kp EQUAL     &kp GT                 &kp GRAVE                     &kp LC(KP_PLUS)    &kp LBKT   &kp UNDER    &kp RBKT       &trans     &trans
+&trans  &kp HASH  &kp LPAR      &kp MINUS     &kp RIGHT_PARENTHESIS  &kp LS(F6)                    &kp LC(KP_MINUS)   &kp LBRC   &kp PERCENT  &kp RBRC       &kp K_APP  &kp BACKSLASH
+&trans  &kp N1    &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4           &trans                        &kp LC(LA(RIGHT))  &kp ENTER  &kp ASTRK    &kp AMPERSAND  &trans     &trans
+                  &trans        &trans        &trans                 &mo 3       &trans    &trans  &trans             &trans     &trans       &trans
             >;
 
             display-name = "2";
@@ -95,10 +95,10 @@
 
         adj {
             bindings = <
-&bootloader  &kp F1  &kp F2   &kp F3   &kp F4   &trans                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &m0
-&none        &kp F5  &kp F6   &kp F7   &kp F8   &trans                  &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &bt BT_CLR    &studio_unlock
-&none        &kp F9  &kp F10  &kp F11  &kp F12  &trans                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &none         &none
-                     &none    &none    &none    &none   &none    &none  &none         &none         &kp C_MUTE        &kp K_MUTE2
+&bootloader  &kp F1  &kp F2      &kp F3      &kp F4   &trans                  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4  &m0
+&none        &kp F5  &kp F6      &kp F7      &kp F8   &trans                  &out OUT_BLE  &kp C_VOL_DN  &kp K_MUTE        &kp C_VOL_UP  &bt BT_CLR    &studio_unlock
+&none        &kp F9  &kp F10     &kp F11     &kp F12  &trans                  &out OUT_USB  &kp K_PREV    &kp K_PLAY_PAUSE  &kp K_NEXT    &none         &none
+                     &kp LC(F4)  &kp LA(F4)  &none    &none   &none    &none  &none         &none         &kp C_MUTE        &kp K_MUTE2
             >;
 
             display-name = "3";
@@ -117,10 +117,10 @@
 
         scroll {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans    &trans    &trans    &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans    &trans    &trans
             >;
 
             display-name = "Scroll";
@@ -128,10 +128,10 @@
 
         sniper {
             bindings = <
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans  &trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans  &trans
-                &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &msc SCRL_LEFT  &msc SCRL_UP    &msc SCRL_RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans  &mo 5   &trans                    &trans  &mkp MB1        &mkp MB3        &mkp MB2         &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans          &msc SCRL_DOWN  &trans           &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans
             >;
 
             display-name = "Sniper";
